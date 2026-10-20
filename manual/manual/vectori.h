@@ -114,7 +114,7 @@ void solutie5() {
 
 //6.
 void solutie6() {
-	int v[501] = { 12,17,32,83,16,63,87 };
+	int v[1000] = { 12,17,32,83,16,63,87 };
 	int d = 7;
 
 	for (int i = 0;i < d;i++) {
@@ -162,7 +162,7 @@ void solutie8() {
 	int x = d;
 	int rez = -1;
 
-	for (int i = d - 1;i > 0;i--) {
+	for (int i = d - 1;i >= 0;i--) {
 		if (v[i] <= x) {
 			cout << v[i];
 			rez = 1;
@@ -189,7 +189,10 @@ void solutie8alternativ() {
 		if (v[mij] <= x) {
 			ok = 1;
 			rez = v[mij];
-			ls = mij - 1;
+			ls = mij + 1;
+		}
+		else {
+			ld = mij - 1;
 		}
 	}
 
@@ -279,21 +282,15 @@ void solutieBAC()
 		int ct = 0, ogl = 0;
 		while (aux != 0) {
 			int cif = aux % 10;
-			if (cif == 0) {
-				break;
-			}
 			ogl = ogl * 10 + cif;
 			ct++;
 			aux = aux / 10;
 		}
 
-
-		if (ct == 3 && ogl != v[i]) {
+		if (ct == 3 && v[i]%10!=0 && ogl != v[i]) {
 			v[i] = ogl;
 			vf = 1;
 		}
-
-
 	}
 
 	if (vf == 0) {
