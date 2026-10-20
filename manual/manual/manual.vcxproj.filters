@@ -23,5 +23,8 @@
     <ClInclude Include="vectori.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="teza1MI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

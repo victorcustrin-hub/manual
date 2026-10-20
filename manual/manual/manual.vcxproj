@@ -142,6 +142,7 @@
     <ClCompile Include="manual.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="teza1MI.h" />
     <ClInclude Include="vectori.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
