@@ -36,19 +36,19 @@ void solutie2() {
 		f[cif]++;
 		n = n / 10;
 	}
-	
+	cout << "a) ";
 	for (int i = 9;i >= 0;i--) {
 	 	int aux = f[i];
 		while (aux != 0) {
-			cout << "a) " << i;
+			cout << i;
 			aux--;
 		}
 	}
 	cout << endl;
-	
+	cout << "b) ";
 	for (int i = 9;i >= 0;i--) {
 		if (f[i] != 0) {
-			cout << "b) " << i;
+			cout << i;
 		}
 	}
 
@@ -159,7 +159,7 @@ void solutie7() {
 void solutie8() {
 	int v[501] = { 1,3,4,5,6,12,16,32 };
 	int d = 8;
-	int x = d;
+	int x = 8;
 	int rez = -1;
 
 	for (int i = d - 1;i >= 0;i--) {
@@ -179,7 +179,7 @@ void solutie8() {
 void solutie8alternativ() {
 	int v[501] = { 1,3,4,5,6,12,16,32 };
 	int d = 8;
-	int x = d;
+	int x = 8;
 	int ls = 0;int ld = d - 1;
 	bool ok = 0;
 	int rez = 0;
@@ -287,7 +287,7 @@ void solutieBAC()
 			aux = aux / 10;
 		}
 
-		if (ct == 3 && v[i]%10!=0 && ogl != v[i]) {
+		if (ct == 3 && v[i] % 10 != 0 && ogl != v[i]) {
 			v[i] = ogl;
 			vf = 1;
 		}
