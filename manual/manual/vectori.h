@@ -36,19 +36,19 @@ void solutie2() {
 		f[cif]++;
 		n = n / 10;
 	}
-	cout << "a) ";
+	
 	for (int i = 9;i >= 0;i--) {
 	 	int aux = f[i];
 		while (aux != 0) {
-			cout << i;
+			cout << "a) " << i;
 			aux--;
 		}
 	}
 	cout << endl;
-	cout << "b) ";
+	
 	for (int i = 9;i >= 0;i--) {
 		if (f[i] != 0) {
-			cout << i;
+			cout << "b) " << i;
 		}
 	}
 
@@ -56,7 +56,7 @@ void solutie2() {
 
 //3.
 void solutie3() {
-	int v[100] = { 6,24,87,35,76,87,95,80,9,37,97,78,34 };
+	int v[1000] = { 6,24,87,35,76,87,95,80,9,37,97,78,34 };
 	int d = 13;
 	int f[101]{};
 
@@ -75,7 +75,7 @@ void solutie3() {
 
 //4.
 void solutie4() {
-	int v[100] = { 6,24,24,87,0,35,76,87,95,80,9 };
+	int v[1000] = { 6,24,24,87,0,35,76,87,95,80,9 };
 	int d = 11;
 	int f[101]{};
 
@@ -92,7 +92,7 @@ void solutie4() {
 
 //5.
 void solutie5() {
-	int v[100] = { 2,12,17,32,12,32,17,9,13 };
+	int v[1000] = { 2,12,17,32,12,32,17,9,13 };
 	int d = 9;
 	int fprim[101]{};
 	int fultim[101]{};
@@ -137,7 +137,7 @@ void solutie6() {
 //7.
 void solutie7() {
 	int v[501] = { 12,17,32,32,16,63,63,87 };
-	int d = 7;
+	int d = 8;
 
 	for (int i = 0;i < d - 1;i++) {
 		if (v[i] == v[i + 1]) {
